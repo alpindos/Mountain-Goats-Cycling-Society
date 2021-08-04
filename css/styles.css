@@ -1,0 +1,13 @@
+/* --- Global Styles --- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 72px;
+  line-height: 1.2;
+  text-align: center;
+}
