@@ -1,3 +1,13 @@
+/* --- Colors --- */
+
+Green: 4CC65D
+Yellow: FEFF06
+Blue: 00BDFE
+Red: FF0000
+White: FFFFFF
+
+
+
 /* --- Global Styles --- */
 html {
   box-sizing: border-box;
@@ -10,13 +20,40 @@ h1 {
   font-size: 72px;
   line-height: 1.2;
   text-align: center;
+  /*padding: 15px; */
 }
 
 /* --- Header Styles ---*/
 .header-band {
-
+padding: 5px;
 }
 header {
-  background: ;
-  color: ;
+  background: #FEFF06;
+  color: #00BDFE;
+}
+
+/* --- Top Navigation Styles --- */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Arial';
+  font-size: 24px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
