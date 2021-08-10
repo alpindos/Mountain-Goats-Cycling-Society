@@ -65,7 +65,7 @@ color: #00BDFE;
 /* --- Main Page Content --- */
 
 /* Column container */
-.row {
+.container {
   display: flex;
   flex-flow: row wrap;
 }
@@ -74,11 +74,11 @@ color: #00BDFE;
 .side {
   flex: 0 1 30%;
   background-color: red;
-  padding: 20px;
+  padding: 0px;
 }
 /* Main column */
-.main {   
+.main {
   flex: 0 1 70%;
   background-color: blue;
-  padding: 20px;
+  padding: 0px;
 }
