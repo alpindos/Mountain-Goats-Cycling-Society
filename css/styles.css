@@ -9,7 +9,7 @@ White: FFFFFF
 
 
 /* --- Global Styles --- */
-html {
+* {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -61,4 +61,24 @@ color: #00BDFE;
 .nav-list a.active {
   background-color: #04AA6D;
   color: white;
+}
+/* --- Main Page Content --- */
+
+/* Column container */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 0 1 30%;
+  background-color: red;
+  padding: 20px;
+}
+/* Main column */
+.main {   
+  flex: 0 1 70%;
+  background-color: blue;
+  padding: 20px;
 }
