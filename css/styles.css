@@ -20,26 +20,31 @@ h1 {
   font-size: 72px;
   line-height: 1.2;
   text-align: center;
-  /*padding: 15px; */
 }
 
 /* --- Header Styles ---*/
 .header-band {
 padding: 5px;
-}
-header {
-  background: #FEFF06;
-  color: #00BDFE;
+background: #FEFF06;
+color: #00BDFE;
 }
 
 /* --- Top Navigation Styles --- */
 .topnav {
   overflow: hidden;
   background-color: #333;
+  font-size: 0;
 }
-
-.topnav a {
-  float: left;
+.nav-list {
+  background-color: #333;
+  text-align: center;
+  list-style: none;
+}
+.nav-list li {
+  display: inline;
+}
+.nav-list a {
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -48,12 +53,12 @@ header {
   font-size: 24px;
 }
 
-.topnav a:hover {
+.nav-list a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav a.active {
+.nav-list a.active {
   background-color: #04AA6D;
   color: white;
 }
