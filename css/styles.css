@@ -69,16 +69,65 @@ color: #00BDFE;
   display: flex;
   flex-flow: row wrap;
 }
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.side-bar {
   flex: 0 1 30%;
-  background-color: red;
+  background-color: #ebf2f2;
   padding: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.side-bar h2 {
+	font-family: 'Acme', sans-serif;
+}
+.side-bar h3 {
+	font-family: 'Oswald', sans-serif;
+}
+.side-bar p, h5{
+	font-family: 'Merriweather', serif;
+}
+.side-bar img {
+	max-width: 75%;
+	height: auto;
+}
+.side-bar h2, h5, img, p {
+	padding: 0 20px ;
 }
 /* Main column */
-.main {
+.cover-news {
   flex: 0 1 70%;
-  background-color: blue;
+  background-color: #c7d1d1;
   padding: 0px;
+	text-align: justify;
+  text-justify: inter-word;
+}
+.cover-news h2 {
+	font-family: 'Acme', sans-serif;
+}
+.cover-news h3 {
+	font-family: 'Oswald', sans-serif;
+}
+.cover-news p, h5 {
+	font-family: 'Merriweather', serif;
+}
+.cover-news img {
+	max-width: 75%;
+	height: auto;
+}
+.cover-news h2, h3, h5, img, p {
+	padding: 0 20px ;
+}
+
+/* Responsive layout - When the screen size is less than 900px, make the two columns
+stack on top of each other*/
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+	side-bar img {
+		max-width: 60%;
+		height:auto;
+	}
 }
