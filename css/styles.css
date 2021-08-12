@@ -185,3 +185,29 @@ stack on top of each other*/
   background: #cb2027;
   color: white;
 }
+
+/* --- Who R We? Page Styles --- */
+.who-container {
+	display: flex;
+	flex-flow: row wrap;
+	background: rgb(76, 198, 93, 0.3);
+	}
+.who-pic {
+	flex: 25%;
+}
+.who-pic img {
+	max-width: 80%;
+	margin: 10% auto;
+}
+.who-text {
+	flex: 75%;
+	font-family: 'Merriweather', serif;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 1% auto;
+}
+
+
+
+
+
