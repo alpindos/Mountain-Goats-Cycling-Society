@@ -1,13 +1,9 @@
 /* --- Colors --- */
-
 Green: 4CC65D
 Yellow: FEFF06
 Blue: 00BDFE
 Red: FF0000
 White: FFFFFF
-
-
-
 /* --- Global Styles --- */
 * {
   box-sizing: border-box;
@@ -75,77 +71,71 @@ navigation menu stack on top of each other */
 /* --- Main Page Content --- */
 /* Column container */
 .container {
-  display: flex;
-  flex-flow: row wrap;
+	display: flex;
+	flex-flow: row wrap;
+}
+.container h2 {
+	font-family: 'Acme', sans-serif;
+}
+.container h3 {
+	font-family: 'Oswald', sans-serif;
+}
+.container p, h5{
+	font-family: 'Merriweather', serif;
+}
+.container h3, h5, p {
+	max-width: 75%;
+}
+.container img {
+	max-width: 75%;
+	height: auto;
+}
+.container h2, h3, h5, img, p {
+	padding: 0 20px ;
+}
+.container h5 {
+	margin-top: 0;
 }
 /* Side Column */
 .side-bar {
   flex: 0 1 30%;
-  background-color: #ebf2f2;
-  padding: 0px;
+  background-color: #ebf2f2;  
   text-align: justify;
   text-justify: inter-word;
 }
-.side-bar h2 {
-	font-family: 'Acme', sans-serif;
-}
-.side-bar h3 {
-	font-family: 'Oswald', sans-serif;
-}
-.side-bar p, h5{
-	font-family: 'Merriweather', serif;
-}
-.side-bar p {
-  max-width: 75%;
-}
-.side-bar img {
-	max-width: 75%;
-	height: auto;
-}
-.side-bar h2, h5, img, p {
-	padding: 0 20px ;
-}
-/* Main column */
+/* News Column */
 .cover-news {
   flex: 0 1 70%;
-  background-color: #c7d1d1;
-  padding: 0px;
-	text-align: justify;
+  background-color: #c7d1d1;  
+  text-align: justify;
   text-justify: inter-word;
 }
-.cover-news h2 {
-	font-family: 'Acme', sans-serif;
-}
-.cover-news h3 {
-	font-family: 'Oswald', sans-serif;
-}
-.cover-news p, h5 {
-	font-family: 'Merriweather', serif;
-}
-.cover-news h5 {
-  margin-top: 0;
-}
-.cover-news p {
-  max-width: 75%;
-}
-.cover-news img {
-	max-width: 75%;
-	height: auto;
-}
-.cover-news h2, h3, h5, img, p {
-	padding: 0 20px ;
-}
+
 /* Responsive layout - When the screen size is less than 900px, make the two columns
 stack on top of each other*/
 @media screen and (max-width: 900px) {
 	.container {
 		flex-direction: column;
 	}
-	side-bar img {
-		max-width: 60%;
+	.side-bar img {
+		max-width: 50%;
 		height:auto;
+		margin: 5px 20%;		
 	}
-}
+	.side-bar h2 {
+		max-width: 50%;
+		margin: 0 20%;
+	}
+	.side-bar h3 {
+		max-width: 50%;
+		margin: 0 20%;
+		text-align: left;
+	}
+	.side-bar p {
+		max-width: 50%;
+		margin: 0 20%;
+	}
+} 
 /* --- Social Media Buttons in Footer --- */
 .page-footer {
   overflow: hidden;
@@ -165,8 +155,8 @@ stack on top of each other*/
 }
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 30px;
+  font-size: 20px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 10px 25px;
