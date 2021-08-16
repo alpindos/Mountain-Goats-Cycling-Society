@@ -1,0 +1,239 @@
+/* --- Colors --- */
+Green: 4CC65D
+Yellow: FEFF06
+Blue: 00BDFE
+Red: FF0000
+White: FFFFFF
+/* --- Global Styles --- */
+* {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* --- Header Styles ---*/
+.header-band {
+padding: 5px;
+background: #FEFF06;
+color: #00BDFE;
+}
+h1 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 72px;
+  line-height: 1.2;
+  text-align: center;
+}
+/* --- Top Navigation Styles --- */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  font-size: 0;
+}
+.nav-list {
+  background-color: #333;
+  text-align: center;
+  list-style: none;
+  }
+.nav-list li {
+  display: inline;
+}
+.nav-list a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Arial';
+  font-size: 24px;
+}
+.nav-list a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.nav-list a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/* Responsive layout - When the screen is less than 900px wide, make the
+navigation menu stack on top of each other */
+@media screen and (max-width: 900px) {
+  .nav-list li {
+    display: block;
+  }
+  .nav-list {
+    text-align: left;
+  }
+  .nav-list a {
+    font-size: 18px;
+    padding: 7px 8px;
+  }
+}
+/* --- Main Page Content --- */
+/* Column container */
+.container {
+	display: flex;
+	flex-flow: row wrap;
+}
+.container h2 {
+	font-family: 'Acme', sans-serif;
+}
+.container h3 {
+	font-family: 'Oswald', sans-serif;
+}
+.container p, h5{
+	font-family: 'Merriweather', serif;
+}
+.container h3, h5, p {
+	max-width: 75%;
+}
+.container img {
+	max-width: 75%;
+	height: auto;
+}
+.container h2, h3, h5, img, p {
+	padding: 0 20px ;
+}
+.container h5 {
+	margin-top: 0;
+}
+/* Side Column */
+.side-bar {
+  flex: 0 1 30%;
+  background-color: #ebf2f2;  
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* News Column */
+.cover-news {
+  flex: 0 1 70%;
+  background-color: #c7d1d1;  
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Responsive layout - When the screen size is less than 900px, make the two columns
+stack on top of each other*/
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+	.side-bar img {
+		max-width: 50%;
+		height:auto;
+		margin: 5px 20%;		
+	}
+	.side-bar h2 {
+		max-width: 50%;
+		margin: 0 20%;
+	}
+	.side-bar h3 {
+		max-width: 50%;
+		margin: 0 20%;
+		text-align: left;
+	}
+	.side-bar p {
+		max-width: 50%;
+		margin: 0 20%;
+	}
+} 
+/* --- Social Media Buttons in Footer --- */
+.page-footer {
+  overflow: hidden;
+  font-size: 0;
+  background: #e4ebea;
+  }
+.social-bar {
+  text-align: center;
+  list-style: none;
+  }
+.social-bar li {
+  display: inline;
+}
+.social-bar a {
+  display: inline-block;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 25px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/* --- Who R We? Page Styles --- */
+.who-container {
+	display: flex;
+	flex-flow: row wrap;
+	background: rgb(76, 198, 93, 0.3);
+	}
+.who-pic {
+	flex: 25%;
+}
+.who-pic img {
+	max-width: 80%;
+	margin: 10% auto;
+}
+.who-text {
+	flex: 75%;
+	font-family: 'Merriweather', serif;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 1% auto;
+}
+
+/* --- Routes Pages Styles --- */
+.button-container {
+	display: flex;	
+	flex-flow: column nowrap;
+}
+
+.button-style {
+	display: block;
+	background-color: white;
+	border: none;
+	color: black;
+	font-size: 16px;
+	padding: 12px 28px;
+	transition-duration: 0.3s;
+	width: 100%;
+	text-align: left;
+}
+.button-style:hover {
+	background-color: black;
+	color: white;
+}
+/*
+#Route-1 {
+	display: none;
+}
+#Route-2 {
+	display: none;
+}
+*/
+
