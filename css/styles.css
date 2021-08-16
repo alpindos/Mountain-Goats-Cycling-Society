@@ -207,12 +207,11 @@ stack on top of each other*/
 	margin: 1% auto;
 }
 
-/* --- Routes Pages Styles --- */
+/* --- Routes Page Styles --- */
 .button-container {
 	display: flex;	
 	flex-flow: column nowrap;
 }
-
 .button-style {
 	display: block;
 	background-color: white;
@@ -228,12 +227,11 @@ stack on top of each other*/
 	background-color: black;
 	color: white;
 }
-/*
 #Route-1 {
 	display: none;
 }
 #Route-2 {
 	display: none;
 }
-*/
+
 
