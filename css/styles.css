@@ -207,7 +207,33 @@ stack on top of each other*/
 	margin: 1% auto;
 }
 
+/* --- Routes Pages Styles --- */
+.button-container {
+	display: flex;	
+	flex-flow: column nowrap;
+}
 
-
-
+.button-style {
+	display: block;
+	background-color: white;
+	border: none;
+	color: black;
+	font-size: 16px;
+	padding: 12px 28px;
+	transition-duration: 0.3s;
+	width: 100%;
+	text-align: left;
+}
+.button-style:hover {
+	background-color: black;
+	color: white;
+}
+/*
+#Route-1 {
+	display: none;
+}
+#Route-2 {
+	display: none;
+}
+*/
 
