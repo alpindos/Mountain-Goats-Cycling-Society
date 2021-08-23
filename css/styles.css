@@ -16,6 +16,8 @@ White: FFFFFF
 padding: 5px;
 background: #FEFF06;
 color: #00BDFE;
+/*width: 100%;
+margin: 0 auto; */
 }
 h1 {
   font-family: 'Racing Sans One', cursive;
@@ -215,23 +217,21 @@ stack on top of each other*/
 .button-style {
 	display: block;
 	background-color: white;
-	border: none;
+	border: solid 1px black;
 	color: black;
 	font-size: 16px;
 	padding: 12px 28px;
+	margin: 4px;
 	transition-duration: 0.3s;
-	width: 100%;
+	width: inherit;
 	text-align: left;
 }
 .button-style:hover {
 	background-color: black;
 	color: white;
 }
-#Route-1 {
-	display: none;
+.button-container p {
+	font-family: 'Merriweather', serif;
+	
 }
-#Route-2 {
-	display: none;
-}
-
 

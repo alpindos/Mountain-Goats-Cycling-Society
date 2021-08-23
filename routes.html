@@ -14,7 +14,6 @@
 		<!-- Social Media Icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/styles.css">
-		<script src="mgScript.js"></script>
 	</head>
 	<body>
 		<main>
@@ -37,14 +36,14 @@
 			</div>
 	<!-- ROUTES SECTION -->
 			<div class="button-container"> 
-				<button class="button-style" onclick="clickFunc1()">Alpe d'Huez</button>
-				<div id="Route-1">
+				<button id="buttonOne" class="button-style">Alpe d'Huez</button>
+				<div style="display: none"; id="routeOne">
 				<p>The legendary Alpe d'Huez Climb.<br>Length: 12.09km Average Incline: 8.6% 
 				Total Climb: 1,048m Category: HC</p>
 				<img src="images/Alpe-dHuez-Strava.jpg" alt="Alpe d'Huez Map&Elevation Profile">
 				</div>
-				<button class="button-style" onclick="clickFunc2()">Mont Ventoux</button>
-				<div id="Route-2">
+				<button id="buttonTwo" class="button-style">Mont Ventoux</button>
+				<div style="display: none"; id="routeTwo">
 				<p>The leg crasher: Mont Ventoux Climb.<br>Length: 19.94km Average Incline: 7.7% 
 				Total Climb: 1529m Category: HC</p>
 				<img src="images/Mont-Ventoux-Strava.jpg" alt="Mont Ventoux Map&Elevation Profile">
@@ -62,5 +61,6 @@
 			  </ul>
 			</div>
 		</main>
+	<script src="js/mgScript.js"></script>
 	</body>
 </html>
